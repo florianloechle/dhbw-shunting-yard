@@ -27,6 +27,7 @@ Partial Class frmMain
         Me.lblResultDesc = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.lblErrorMessage = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblEquation
@@ -71,13 +72,23 @@ Partial Class frmMain
         Me.btnCalculate.Text = "Rechnen"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'lblErrorMessage
+        '
+        Me.lblErrorMessage.AutoSize = True
+        Me.lblErrorMessage.ForeColor = System.Drawing.Color.Red
+        Me.lblErrorMessage.Location = New System.Drawing.Point(30, 97)
+        Me.lblErrorMessage.Name = "lblErrorMessage"
+        Me.lblErrorMessage.Size = New System.Drawing.Size(0, 18)
+        Me.lblErrorMessage.TabIndex = 5
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuBar
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(560, 284)
+        Me.ClientSize = New System.Drawing.Size(581, 124)
+        Me.Controls.Add(Me.lblErrorMessage)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.lblResultDesc)
@@ -100,4 +111,5 @@ Partial Class frmMain
     Friend WithEvents lblResultDesc As Label
     Friend WithEvents lblResult As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents lblErrorMessage As Label
 End Class
